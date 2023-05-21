@@ -41,15 +41,24 @@ function App() {
 
         </div>
 
-        {/*
-        Carousel section
-        <div className='hidden md:flex'>Carousel</div>
-        */}
+        {/* Carousel section */}
+        <div className='hidden md:flex justify-center'>
+          <div className='flex justify-between w-4/5 text-white bg-indigo-700'>
+            <p>imagen 1</p>
+            <p>imagen 2</p>
+            <div className='w-2/5'>
+              <h3 className='text-xl font-medium'>Shonen:</h3>
+              <p className='text-xs'>Is the manga that is aimed at adolescent boys. They are series with
+                large amounts of action, in which humorous situations often occur.
+                The camaraderie between members of a collective or a combat team stands out.</p>
+            </div>
+          </div>
+        </div>
 
       </div>
 
       {/* Footer section */}
-      <footer className='w-full hidden lg:flex flex-col p-2'>
+      <footer className='w-full hidden md:flex flex-col p-2'>
         <div>imagen</div>
         <div className='flex justify-around'>
 
