@@ -3,14 +3,13 @@ import { useState } from 'react'
 function App() {
   return (
     <>
-    <div className='h-screen flex flex-col'>
+    <div className='flex flex-col'>
 
       {/* Navbar section */}
-      <nav className='w-full flex justify-between items-center top-0
-                      p-2'>
+      <nav className='w-full absolute flex justify-between items-center p-2'>
         {/* Hamburger menu button */}
         <svg
-          className="w-8 h-8 fill-current text-indigo-700"
+          className="w-8 h-8 fill-current text-indigo-700 md:text-white"
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke-width="2" stroke="currentColor">
           <path
@@ -25,8 +24,8 @@ function App() {
       {/* Main section */}
       <div className='font-roboto'>
 
-        {/* Hero section with background-image and text-white */}
-        <div className=''>
+        {/* Hero section */}
+        <div className='h-screen w-full top-0 left-0 text-white bg-[url("../../src/assets/home_mobile.png")] bg-cover flex items-center xl:bg-[url("../../src/assets/home_desktop.png")]'>
 
           {/* Centered elements */}
           <div className='flex flex-col gap-2.5 text-center p-2'>
@@ -42,11 +41,11 @@ function App() {
         </div>
 
         {/* Carousel section */}
-        <div className='hidden md:flex justify-center'>
-          <div className='flex justify-between w-4/5 text-white bg-indigo-700'>
+        <div className='hidden md:flex justify-center my-10 mx-14'>
+          <div className='flex justify-between text-white px-20 py-16 bg-gradient-to-r from-indigo-700 to-[#5E52F3]'>
             <p>imagen 1</p>
             <p>imagen 2</p>
-            <div className='w-2/5'>
+            <div className='w-6/12'>
               <h3 className='text-xl font-medium'>Shonen:</h3>
               <p className='text-xs'>Is the manga that is aimed at adolescent boys. They are series with
                 large amounts of action, in which humorous situations often occur.
@@ -58,9 +57,10 @@ function App() {
       </div>
 
       {/* Footer section */}
-      <footer className='w-full hidden md:flex flex-col p-2'>
-        <div>imagen</div>
-        <div className='flex justify-around'>
+      <footer className='w-full hidden md:flex flex-col'>
+        <img src="../../src/assets/footer_db.png" alt="dragon ball" />
+
+        <div className='flex justify-around m-16'>
 
           <div className='flex items-center gap-2 font-poppins'>
             <a href="#">Home</a>
