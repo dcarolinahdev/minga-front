@@ -25,7 +25,7 @@ function App() {
       <div className='font-roboto'>
 
         {/* Hero section */}
-        <div className='h-screen w-full top-0 left-0 text-white bg-[url("../../src/assets/home_mobile.png")] bg-cover flex items-center xl:bg-[url("../../src/assets/home_desktop.png")]'>
+        <div className='h-screen w-full top-0 left-0 text-white bg-hero-mobile bg-cover flex items-center xl:bg-hero_desktop'>
 
           {/* Centered elements */}
           <div className='flex flex-col gap-2.5 text-center p-2'>
