@@ -62,7 +62,7 @@ function App() {
 
       {/* Footer section */}
       <footer className='w-full hidden md:flex flex-col'>
-        <img src="../../src/assets/footer_db.png" alt="dragon ball" />
+        <img className='rounded-b-[180px]' src="../../src/assets/footer_db.png" alt="dragon ball" />
 
         <div className='flex justify-around m-16'>
 
