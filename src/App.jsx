@@ -61,15 +61,15 @@ function App() {
       </div>
 
       {/* Footer section */}
-      <footer className='w-full hidden md:flex flex-col'>
-        <div className='relative'>
+      <footer className='w-full flex flex-col'>
+        <div className='relative hidden md:block'>
           <img src="../../src/assets/footer_db.png" alt="dragon ball" />
           <svg className='absolute -bottom-10 left-0 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill-opacity="1" d="M0,64L120,106.7C240,149,480,235,720,234.7C960,235,1200,149,1320,106.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
           </svg>
         </div>
 
-        <div className='flex justify-around m-16'>
+        <div className='flex flex-col md:flex-row items-center justify-around m-16 gap-6 md:gap-0'>
 
           <div className='flex items-center gap-2 font-poppins'>
             <a href="#">Home</a>
