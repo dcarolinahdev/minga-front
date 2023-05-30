@@ -1,4 +1,5 @@
-
+import character_photo from '/assets/carousel-img1.png'
+import cover_photo from '/assets/carousel-img2.png'
 
 export default function Index() {
   return (
@@ -26,9 +27,9 @@ export default function Index() {
         <div className='hidden md:flex justify-center m-14'>
           <div className='flex justify-between text-white py-1 px-14 bg-gradient-to-r from-indigo-700 to-[#5E52F3]'>
 
-            <img className='w-1/5 h-auto -mt-8 object-cover' src="assets/carousel-img1.png" alt="imagen 1" />
+            <img className='w-1/5 h-auto -mt-8 object-cover' src={character_photo} alt="imagen 1" />
 
-            <img className='w-1/5 -mt-10 mb-8 overflow-y-visible object-top' src="assets/carousel-img2.png" alt="imagen 2" />
+            <img className='w-1/5 -mt-10 mb-8 overflow-y-visible object-top' src={cover_photo} alt="imagen 2" />
 
             <div className='w-6/12 flex flex-col justify-center'>
               <h3 className='text-xl font-medium'>Shonen:</h3>

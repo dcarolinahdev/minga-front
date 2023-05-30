@@ -1,8 +1,11 @@
+import footer_db from '/assets/footer_db.png'
+import logo from '/assets/Logo.png'
+
 export default function Footer() {
   return (
     <footer className='w-full flex flex-col'>
         <div className='relative hidden md:block'>
-          <img src="assets/footer_db.png" alt="dragon ball" />
+          <img src={footer_db} alt="dragon ball" />
           <svg className='absolute -bottom-10 left-0 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill-opacity="1" d="M0,64L120,106.7C240,149,480,235,720,234.7C960,235,1200,149,1320,106.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
           </svg>
@@ -16,7 +19,7 @@ export default function Footer() {
           </div>
 
           <div className='flex items-center text-indigo-700'>
-            <img src="assets/Logo.png" alt="logo" />
+            <img src={logo} alt="logo" />
             <p className='text-xl uppercase font-roboto_serif font-bold border-2 border-indigo-700 px-0.5'>inga</p>
           </div>
 

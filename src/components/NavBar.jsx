@@ -1,3 +1,5 @@
+import logo_manga from '/assets/logo_manga.png'
+
 export default function NavBar () {
     return (
         <nav className='w-full absolute flex justify-between items-center p-2'>
@@ -12,7 +14,7 @@ export default function NavBar () {
             </svg>
 
             {/* Logo */}
-            <img src="assets/logo_manga.png" alt="Logo" />
+            <img src={logo_manga} alt="Logo" />
         </nav>
     )
 }
