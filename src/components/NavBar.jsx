@@ -12,7 +12,7 @@ export default function NavBar () {
             </svg>
 
             {/* Logo */}
-            <img src="./src/assets/logo_manga.png" alt="Logo" />
+            <img src="assets/logo_manga.png" alt="Logo" />
         </nav>
     )
 }

@@ -3,6 +3,14 @@ import Footer from './components/Footer'
 import Index from './pages/Index'
 
 function App() {
+  let data = [
+    {
+      name: '',
+      character_photo: '',
+      cover_photo: '',
+      description: ''
+    },
+  ]
   return (
     <>
       <div className='flex flex-col'>
