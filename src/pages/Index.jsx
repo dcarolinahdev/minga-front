@@ -1,4 +1,6 @@
-export default function Main() {
+
+
+export default function Index() {
   return (
     <div className='font-roboto'>
 
