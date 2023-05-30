@@ -29,7 +29,7 @@ export default function Index() {
 
             <img className='w-1/5 h-auto -mt-8 object-cover' src={character_photo} alt="imagen 1" />
 
-            <img className='w-1/5 -mt-10 mb-8 overflow-y-visible object-top' src={cover_photo} alt="imagen 2" />
+            <img className='w-1/5 -mt-10 mb-8 object-top' src={cover_photo} alt="imagen 2" />
 
             <div className='w-6/12 flex flex-col justify-center'>
               <h3 className='text-xl font-medium'>Shonen:</h3>
