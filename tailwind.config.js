@@ -12,9 +12,9 @@ module.exports = {
       },
       extend: {
         backgroundImage: {
-          'hero-mobile': "url('../../src/assets/home_mobile.png')",
-          'hero-desktop': "url('../../src/assets/home_desktop.png')",
-          'footer_db': "url('../../src/assets/footer_db.png')",
+          'hero-mobile': "url('/assets/home_mobile.png')",
+          'hero-desktop': "url('/assets/home_desktop.png')",
+          'footer_db': "url('/assets/footer_db.png')",
         }
       }
   },
