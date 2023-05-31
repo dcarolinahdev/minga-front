@@ -1,6 +1,5 @@
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
 import Index from './pages/Index'
+import Main from './layouts/Main'
 
 function App() {
   let data = [
@@ -16,9 +15,9 @@ function App() {
   return (
     <>
       <div className='flex flex-col'>
-        <NavBar />
-        <Index data={data} />
-        <Footer />
+        <Main>
+          <Index data={data} />
+        </Main>
       </div>
     </>
   )
