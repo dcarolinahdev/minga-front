@@ -4,16 +4,15 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Carousel from './components/Carousel'
 
-import character_photo from '/assets/carousel-img1.png'
-import cover_photo from '/assets/carousel-img2.png'
-
 function App() {
   let data = [
     {
-      name: '',
-      character_photo: '',
-      cover_photo: '',
-      description: ''
+      name: 'Shonen',
+      character_photo: '/assets/carousel-img1.png',
+      cover_photo: '/assets/carousel-img2.png',
+      description: 'Is the manga that is aimed at adolescent boys. They are series with '+
+                   'large amounts of action, in which humorous situations often occur. '+
+                   'The camaraderie between members of a collective or a combat team stands out.'
     },
   ]
   return (
@@ -23,7 +22,7 @@ function App() {
 
         <div className='font-roboto'>
           <Hero />
-          <Carousel />
+          <Carousel name={data[0].name} description={data[0].description} character_photo={data[0].character_photo} cover_photo={data[0].cover_photo} />
         </div>
 
         <Footer />
