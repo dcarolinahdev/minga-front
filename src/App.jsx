@@ -1,8 +1,6 @@
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-/*import Index from './pages/Index'*/
-import Hero from './components/Hero'
-import Carousel from './components/Carousel'
+import Index from './pages/Index'
 
 function App() {
   let data = [
@@ -19,12 +17,7 @@ function App() {
     <>
       <div className='flex flex-col'>
         <NavBar />
-
-        <div className='font-roboto'>
-          <Hero />
-          <Carousel name={data[0].name} description={data[0].description} character_photo={data[0].character_photo} cover_photo={data[0].cover_photo} />
-        </div>
-
+        <Index data={data} />
         <Footer />
       </div>
     </>
