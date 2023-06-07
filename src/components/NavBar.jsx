@@ -13,7 +13,7 @@ export default function NavBar () {
     let [show, setShow] = useState(false)
     return (
         <>
-            {show && <Display options={options} />}
+            {show && <Display options={options} show={show} setShow={setShow} />}
             <nav className='w-full absolute flex justify-between items-center p-2'>
                 {/* Hamburger menu button */}
                 <svg
