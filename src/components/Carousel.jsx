@@ -1,30 +1,40 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import axios from "axios"
+import apiUrl from "../apiUrl"
 import Arrow from "./Arrow"
 
-export default function Carousel( {character_photo, cover_photo, name, description} ) {
+export default function Carousel() {
+
+  let [categories, setCategories] = useState([])
+  useEffect(
+    ()=>{
+      axios(apiUrl+'/categories').then(res=>{
+        setCategories(res.data.response)
+      }).catch(err=>console.log(err))
+    },
+    [] // empty array: effect is ejecuted once when component is mounted
+  )
 
   let [counter, setCounter] = useState(0)
   let next = () => {
-    //setCounter((counter!==data.length-1) ? (counter + 1) : (0))
-    setCounter(counter + 1)
+    setCounter((counter!==categories.length-1) ? (counter + 1) : (0))
   }
   let prev = () => {
-    //setCounter((counter != 0) ? (counter - 1) : (data.length-1))
-    setCounter(counter - 1)
+    setCounter((counter != 0) ? (counter - 1) : (categories.length-1))
   }
 
   return (
     <div className='hidden md:flex justify-center m-14'>
-        <div className='relative py-1 px-14 text-white bg-gradient-to-r from-indigo-700 to-[#5E52F3]'>
+        <div className='relative w-full py-1 px-14 text-white bg-gradient-to-r from-indigo-700 to-[#5E52F3]'>
 
-            <div className="z-10 flex justify-between">
-                <img className='w-1/5 h-auto -mt-8 object-cover' src={character_photo} alt="imagen 1" />
+            <div className="z-10 h-56 flex justify-between">
+                <img className='w-1/5 h-56 self-end' src={categories[counter]?.character_photo} alt="imagen 1" />
 
-                <img className='w-1/5 -mt-10 mb-8 object-top' src={cover_photo} alt="imagen 2" />
+                <img className='w-1/5 h-64 mb-4 self-end' src={categories[counter]?.cover_photo} alt="imagen 2" />
 
                 <div className='w-6/12 flex flex-col justify-center'>
-                    <h3 className='text-xl font-medium'>{name}</h3>
-                    <p className='text-xs'>{counter}</p>
+                    <h3 className='text-xl font-medium capitalize'>{categories[counter]?.name}</h3>
+                    <p className='text-xs'>{categories[counter]?.description}</p>
                 </div>
             </div>
 
