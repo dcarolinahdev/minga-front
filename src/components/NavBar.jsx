@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function NavBar () {
     let options = [
         {title: 'Home', to: '/'},
-        {title: 'Mangas', to: '/mangas'},
+        {title: 'Mangas', to: '/'},
         {title: 'My Mangas', to: '/'},
         {title: 'Favorites', to: '/'},
         {title: 'Logout', to: '/'}
