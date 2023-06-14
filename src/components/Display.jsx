@@ -1,4 +1,4 @@
-
+import { Link as Anchor } from "react-router-dom"
 
 export default function Display({ options, show, setShow }) {
   return (
@@ -18,9 +18,9 @@ export default function Display({ options, show, setShow }) {
         </div>
         <div className="flex flex-col text-2xl gap-2">
             {options?.map((each, index)=>
-                <div className="w-full p-3 rounded-md text-[15px] font-semibold hover:bg-white hover:text-indigo-700" key={index}>
+                <Anchor key={index} to={each.to} className="w-full p-3 rounded-md text-[15px] font-semibold hover:bg-white hover:text-indigo-700">
                     {each.title}
-                </div>
+                </Anchor>
             )}
         </div>
     </div>

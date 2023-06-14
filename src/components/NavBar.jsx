@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 export default function NavBar () {
     let options = [
-        {title: 'Home'},
-        {title: 'Mangas'},
-        {title: 'My Mangas'},
-        {title: 'Favorites'},
-        {title: 'Logout'}
+        {title: 'Home', to: '/'},
+        {title: 'Mangas', to: '/mangas'},
+        {title: 'My Mangas', to: '/'},
+        {title: 'Favorites', to: '/'},
+        {title: 'Logout', to: '/'}
     ]
     let [show, setShow] = useState(false)
     return (
