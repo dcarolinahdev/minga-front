@@ -1,15 +1,9 @@
-import Index from './pages/Index'
-import Main from './layouts/Main'
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
 
 function App() {
   return (
-    <>
-      <div className='flex flex-col'>
-        <Main>
-          <Index />
-        </Main>
-      </div>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
