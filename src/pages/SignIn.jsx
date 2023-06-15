@@ -24,23 +24,26 @@ export default function SignIn() {
             <label className="absolute -top-2 left-[2ch] px-1 z-10 text-[12px] text-indigo-700 bg-white" htmlFor="email">Email</label>
             <input
             className='relative border lg:border-2 border-[#1F1F1F]/30 hover:border-indigo-700 rounded-[10px] w-full px-4 py-2'
-            type="text" placeholder="your-email@domain.com" id="email"
-            />
+            type="text" placeholder="your-email@domain.com" id="email"/>
+            <span className="absolute right-[1ch] top-2 text-indigo-700">@</span>
           </div>
 
           <div className='relative'>
             <label className="absolute -top-2 left-[2ch] px-1 z-10 text-[12px] text-indigo-700 bg-white" htmlFor="passw">Password</label>
             <input
             className='relative border lg:border-2 border-[#1F1F1F]/30 hover:border-indigo-700 rounded-[10px] w-full px-4 py-2'
-            type="password" id="passw"
-            />
+            type="password" id="passw"/>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                className="w-4 h-4 absolute right-[1ch] top-2 text-indigo-700" strokeWidth="1.5" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
           </div>
 
-          <button className='text-white font-bold rounded-[10px] py-2 bg-indigo-700 hover:bg-indigo-600 md:bg-gradient-to-r from-indigo-700 to-[#5E52F3]' >
+          <button className='text-white font-bold rounded-[10px] py-2 bg-indigo-700 hover:bg-indigo-600 md:bg-gradient-to-r from-indigo-700 to-[#5E52F3] md:hover:from-indigo-500' >
               <span>Sign In</span>
           </button>
 
-          <button className="border lg:border-2 border-[#1F1F1F]/30 hover:border-indigo-700 rounded-[10px] py-2 flex justify-center items-center gap-1">
+          <button className="border lg:border-2 border-[#1F1F1F]/30 hover:border-indigo-500 hover:bg-neutral-200 rounded-[10px] py-2 flex justify-center items-center gap-1">
             <img className="h-4 md:h-6" src="/assets/google.png" alt="G Google" />
             <span className="opacity-50">Sign in with Google</span>
           </button>
