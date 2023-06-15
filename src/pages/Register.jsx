@@ -1,3 +1,5 @@
+import { Link as Anchor } from "react-router-dom"
+
 export default function Register() {
   return (
     <div className="flex">
@@ -74,8 +76,8 @@ export default function Register() {
         </form>
 
         <div className="flex flex-col items-center font-meduim text-xs lg:text-sm gap-2 md:gap-4 leading-[12px]">
-          <p>you don't have an account yet? <span className="text-indigo-700">Sign up</span></p>
-          <p>Go back to <span className="text-indigo-700">home page</span></p>
+          <p>Already hace an account? <Anchor to={'/signin'} className="text-indigo-700">Log in</Anchor></p>
+          <p>Go back to <Anchor to={'/'} className="text-indigo-700">home page</Anchor></p>
         </div>
 
       </div>
