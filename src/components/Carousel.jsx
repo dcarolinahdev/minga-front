@@ -25,7 +25,7 @@ export default function Carousel() {
 
   return (
     <div className='hidden relative md:h-[25vh] md:flex justify-center mx-[5%] my-[4%]'>
-        <div className='w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.color }}>
+        <div className='w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.hover }}>
             <div className="h-full flex justify-around">
                   <div className="w-1/5 h-full flex justify-center">
                       <img className="h-full self-end" src={categories[counter]?.character_photo} alt="character photo" />
@@ -36,8 +36,8 @@ export default function Carousel() {
                   </div>
 
                   <div className='w-6/12 flex flex-col justify-center'>
-                      <h3 className='text-xl font-medium capitalize' style={{ color: categories[counter]?.hover }}>{categories[counter]?.name}</h3>
-                      <p className='text-xs' style={{ color: categories[counter]?.hover }}>{categories[counter]?.description}</p>
+                      <h3 className='text-xl font-medium capitalize' style={{ color: categories[counter]?.color }}>{categories[counter]?.name}</h3>
+                      <p className='text-xs' style={{ color: categories[counter]?.color }}>{categories[counter]?.description}</p>
                   </div>
             </div>
         </div>
