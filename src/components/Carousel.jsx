@@ -26,7 +26,7 @@ export default function Carousel() {
   return (
     <div className='hidden relative md:h-[25vh] md:flex justify-center mx-[5%] my-[4%]'>
         <div className='w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.color }}>
-            <div className="z-10 h-full flex justify-around">
+            <div className="h-full flex justify-around">
                   <div className="w-1/5 h-full flex justify-center">
                       <img className="h-full self-end" src={categories[counter]?.character_photo} alt="character photo" />
                   </div>
@@ -41,7 +41,7 @@ export default function Carousel() {
                   </div>
             </div>
         </div>
-        <div className="z-20 absolute top-[45%] left-[3%] right-[3%] flex justify-between">
+        <div className="absolute top-[45%] left-[3%] right-[3%] flex justify-between">
 
           <Arrow d={"M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"} onClick={prev}/>
 
