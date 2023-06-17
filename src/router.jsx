@@ -3,6 +3,7 @@ import Main from './layouts/Main'
 import Index from './pages/Index'
 import SignIn from './pages/SignIn'
 import Register from './pages/Register'
+import CiaForm from './pages/CiaForm'
 
 let router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ let router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register />
+            },
+            {
+                path: '/cia-form',
+                element: <CiaForm />
             }
         ]
     }
