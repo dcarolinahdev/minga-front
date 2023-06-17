@@ -2,7 +2,7 @@ import Button from './Button'
 
 export default function Hero() {
   return (
-    <div className='h-screen md:h-[75vh] w-full top-0 left-0 text-white bg-hero-mobile bg-cover flex justify-center items-center md:bg-hero_desktop'>
+    <div className='h-screen md:h-[75vh] w-full top-0 left-0 text-white flex justify-center items-center bg-hero-mobile md:bg-hero_desktop bg-[center_top_10%] bg-cover'>
 
         <div className='flex flex-col gap-2.5 text-center px-6'>
             <h1 className='text-4xl font-bold'>Your favorite comic book store</h1>

@@ -14,7 +14,7 @@ export default function NavBar () {
     return (
         <>
             {show && <Display options={options} show={show} setShow={setShow} />}
-            <nav className='w-full absolute flex justify-between items-center p-2 sm:p-3 md:p-4 lg:p-5 xl:p-'>
+            <nav className='w-full absolute flex justify-between items-center p-[2.25%]'>
                 {/* Hamburger menu button */}
                 <svg
                     className="w-8 h-8 fill-current text-indigo-700 md:text-white"
