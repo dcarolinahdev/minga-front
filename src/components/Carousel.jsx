@@ -24,7 +24,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className='hidden md:flex justify-center m-14'>
+    <div className='hidden md:h-1/4 md:flex justify-center m-14'>
         <div className='relative w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.color }}>
 
             <div className="z-10 h-56 flex justify-between">
