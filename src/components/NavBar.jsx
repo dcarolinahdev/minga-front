@@ -16,9 +16,9 @@ export default function NavBar () {
             {show && <Display options={options} show={show} setShow={setShow} />}
             <nav className='w-full absolute flex justify-between items-center p-[2.25%]'>
                 {/* Hamburger menu button */}
-                <div className='bg-indigo-700 p-1 rounded-md'>
+                <div className='bg-indigo-700 p-1 rounded-md cursor-pointer'>
                     <svg
-                        className="w-8 h-8 fill-current text-indigo-700 md:text-white"
+                        className="w-8 h-8 fill-current text-white"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         strokeWidth="2" stroke="currentColor" onClick={()=>setShow(!show)}>
                         <path
