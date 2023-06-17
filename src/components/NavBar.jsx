@@ -1,4 +1,3 @@
-import logo_manga from '/assets/logo_manga.png'
 import Display from './Display'
 import { useState } from 'react'
 
@@ -16,7 +15,7 @@ export default function NavBar () {
             {show && <Display options={options} show={show} setShow={setShow} />}
             <nav className='w-full absolute flex justify-between items-center p-[2.25%]'>
                 {/* Hamburger menu button */}
-                <div className='bg-indigo-700 p-1 rounded-md cursor-pointer'>
+                <div className='h-8 sm:h-10 md:h-12 lg:h-14 flex items-center px-2 bg-indigo-700 hover:bg-indigo-600 rounded-md cursor-pointer'>
                     <svg
                         className="w-8 h-8 fill-current text-white"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -28,7 +27,7 @@ export default function NavBar () {
                 </div>
 
                 {/* Logo */}
-                <img className='z-10' src={logo_manga} alt="Logo" />
+                <img className='h-8 sm:h-10 md:h-12 lg:h-14' src='/assets/Logo_Blue.png' alt="Logo" />
             </nav>
         </>
     )
