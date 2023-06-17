@@ -24,27 +24,29 @@ export default function Carousel() {
   }
 
   return (
-    <div className='hidden md:flex justify-center m-14'>
-        <div className='relative w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.color }}>
+    <div className='hidden relative md:h-[25vh] md:flex justify-center m-14'>
+        <div className='w-full py-1 px-14 text-white' style={{ backgroundColor: categories[counter]?.color }}>
+            <div className="z-10 h-full flex justify-between">
+                  <div className="w-1/5 self-end">
+                      <img className='' src={categories[counter]?.character_photo} alt="character photo" />
+                  </div>
 
-            <div className="z-10 h-56 flex justify-between">
-                <img className='w-1/5 h-56 self-end' src={categories[counter]?.character_photo} alt="imagen 1" />
+                  <div className="w-1/5 self-end">
+                      <img className='mb-4' src={categories[counter]?.cover_photo} alt="cover photo" />
+                  </div>
 
-                <img className='w-1/5 h-64 mb-4 self-end' src={categories[counter]?.cover_photo} alt="imagen 2" />
-
-                <div className='w-6/12 flex flex-col justify-center'>
-                    <h3 className='text-xl font-medium capitalize' style={{ color: categories[counter]?.hover }}>{categories[counter]?.name}</h3>
-                    <p className='text-xs' style={{ color: categories[counter]?.hover }}>{categories[counter]?.description}</p>
-                </div>
+                  <div className='w-6/12 flex flex-col justify-center'>
+                      <h3 className='text-xl font-medium capitalize' style={{ color: categories[counter]?.hover }}>{categories[counter]?.name}</h3>
+                      <p className='text-xs' style={{ color: categories[counter]?.hover }}>{categories[counter]?.description}</p>
+                  </div>
             </div>
+        </div>
+        <div className="z-20 absolute top-[45%] left-[3%] right-[3%] flex justify-between">
 
-            <div className="z-20 absolute top-[47.5%] left-[3%] right-[3%] flex justify-between">
+          <Arrow d={"M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"} onClick={prev}/>
 
-              <Arrow d={"M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"} onClick={prev}/>
+          <Arrow d={"M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"}  onClick={next}/>
 
-              <Arrow d={"M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"}  onClick={next}/>
-
-            </div>
         </div>
     </div>
   )
