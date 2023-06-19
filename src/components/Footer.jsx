@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className='w-full flex flex-col'>
         <div className='relative hidden md:block'>
-          <img src={footer_db} alt="dragon ball" />
+          <img className='w-full object-cover' src={footer_db} alt="dragon ball" />
           <svg className='absolute -bottom-10 left-0 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fillOpacity="1" d="M0,64L120,106.7C240,149,480,235,720,234.7C960,235,1200,149,1320,106.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
           </svg>
